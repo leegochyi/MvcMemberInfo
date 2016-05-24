@@ -1,0 +1,66 @@
+﻿@model MvcMemberInfo.Models.Info
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtmBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtmBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtmCreat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtmCreat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtmUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtmUpdate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
